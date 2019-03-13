@@ -1,0 +1,15 @@
+INICIO DE SESION SOMEE.COM
+	user= apsw_brandon
+	pass= APSW142667
+
+
+
+DATABASE SQL SERVER 2014 CONEXION
+server name= APSWSEVRI.mssql.somee.com
+user= apsw_grupo
+pass= APSW142667
+
+nombre de base de datos= APSWSEVRI
+
+
+Pagina web= http://SEVRI.somee.com
