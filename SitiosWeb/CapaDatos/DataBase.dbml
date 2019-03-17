@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="APSWSEVRI" Class="DataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=APSWSEVRI.mssql.somee.com;Initial Catalog=APSWSEVRI;User ID=apsw_grupo;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="CapaDatos.Properties.Settings" SettingsPropertyName="APSWSEVRIConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.PrAdmi" Method="PrAdmi">
+    <Parameter Name="TipoRiesgo" Parameter="tipoRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Prioridad" Parameter="prioridad" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoInherente" Parameter="nivelRiesgoInherente" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoResidual" Parameter="nivelRiesgoResidual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="GradoAfectacion" Parameter="gradoAfectacion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Importancia" Parameter="importancia" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Variacion" Parameter="variacion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Costo" Parameter="costo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Aceptabilidad" Parameter="aceptabilidad" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="Resultado" Parameter="resultado" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrEvalu" Method="PrEvalu">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ControlActual" Parameter="controlActual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="Probabilidad" Parameter="probabilidad" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Impacto" Parameter="impacto" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoInherente" Parameter="nivelRiesgoInherente" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoResidual" Parameter="nivelRiesgoResidual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaApli" Parameter="fechaApli" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProDiccionario" Method="ProDiccionario">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Categoria" Parameter="categoria" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Subcategoria" Parameter="subcategoria" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProEspecif" Method="ProEspecif">
+    <Parameter Name="CodigoEspe" Parameter="codigoEspe" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AreaRiesgo" Parameter="areaRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DependenciaRiesgo" Parameter="dependenciaRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Causa" Parameter="causa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaIdenti" Parameter="fechaIdenti" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Consecuencia" Parameter="consecuencia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ProGenerales" Method="ProGenerales">
+    <Parameter Name="CodigoGeneral" Parameter="codigoGeneral" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Causa" Parameter="causa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Consecuencia" Parameter="consecuencia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaIdenti" Parameter="fechaIdenti" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.inser" Method="inser">
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Contra" Parameter="contra" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

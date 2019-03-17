@@ -1,0 +1,110 @@
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\SitiosWeb.dll.config
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\SitiosWeb.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\SitiosWeb.pdb
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Antlr3.Runtime.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\EntityFramework.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Newtonsoft.Json.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Owin.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\System.Web.Optimization.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\System.Web.Providers.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\WebGrease.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\System.Web.Optimization.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Antlr3.Runtime.pdb
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Newtonsoft.Json.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\EntityFramework.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\System.Web.Providers.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.csprojResolveAssemblyReference.cache
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.pdb
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\CapaDatos.dll
+C:\Users\Gerardo\Documents\Progra5\SitiosWeb\SitiosWeb\bin\CapaDatos.pdb
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\SitiosWeb.dll.config
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\SitiosWeb.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\SitiosWeb.pdb
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Antlr3.Runtime.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\CapaDatos.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\EntityFramework.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Newtonsoft.Json.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Owin.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\System.Web.Optimization.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\System.Web.Providers.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\WebGrease.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\CapaDatos.pdb
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\CapaDatos.dll.config
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\System.Web.Optimization.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Antlr3.Runtime.pdb
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Newtonsoft.Json.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\EntityFramework.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\System.Web.Providers.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.csprojResolveAssemblyReference.cache
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.csproj.CoreCompileInputs.cache
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.dll
+C:\Users\fiorella salazar\Desktop\SitiosWeb\SitiosWeb\obj\Debug\SitiosWeb.pdb
