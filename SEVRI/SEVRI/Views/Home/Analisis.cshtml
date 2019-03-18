@@ -1,0 +1,182 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Análisis y Evaluación de Riesgo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+    <link rel="stylesheet" href="~/assets/css/diccionario.css" />
+    <link rel="stylesheet" href="~/assets/css/generales.css" />
+    <noscript><link rel="stylesheet" href="~/assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="Home/Index">Inicio</a></li>
+                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li>
+                        <a href="#">Identificación</a>
+                        <ul>
+                            <li><a href="Home/Generales">Riesgos Generales</a></li>
+                            <li><a href="Home/Especificos">Riesgos Especificos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Análisis y Evaluación</a></li>
+                    <li><a href="/Home/Administracion">Administración</a></li>
+                    <li><a href="/Home/InicioSesion" class="button primary">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="four" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>Análisis y Evaluación de Riesgo</h2>
+                </header>
+                <form action="" method="post">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="buscar" id="buscar" value="" placeholder="Ingrese el código" />
+                    </div>
+                    <input type="submit" value="Buscar" class="primary" />
+                </form>
+
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Tipo de Riesgo</th>
+                                <th>Riesgo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item</td>
+                                <td>Tipo</td>
+                                <td>Baja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <header class="major">
+                    <h3>Evaluación de los controles actuales del Riesgo</h3>
+                </header>
+                <br />
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                            <tr>
+                                <th>Codigo C.A</th>
+                                <th>Descripción C.A</th>
+                                <th>Probabilidad</th>
+                                <th>Impacto</th>
+                                <th>Nivel de riesgo inherente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item</td>
+                                <td>Tipo</td>
+                                <td>Baja</td>
+                                <td>Tipo</td>
+                                <td>Baja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <header class="major">
+                    <h3>Evaluación de los controles actuales del Riesgo</h3>
+                </header>
+                <br />
+                <form action="" method="post">
+                    <div class="table-wrapper">
+                        <table class="alt">
+                            <thead>
+                                <tr>
+                                    <th>Codigo C.P</th>
+                                    <th>Descripción C.P</th>
+                                    <th>Probabilidad</th>
+                                    <th>Impacto</th>
+                                    <th>Nivel de riesgo residual</th>
+                                    <th>Fecha de Aplicación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item</td>
+                                    <td>Tipo</td>
+                                    <td>
+                                        <select name="probabilidad" id="probabilidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="impacto" id="impacto">                                           
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </td>
+                                    <td>Baja</td>
+                                    <td>
+                                        <input type="date" name="fecha" id="fecha" /><br />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>       
+                    <br />
+                    <br />
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Registrar" class="primary" /></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.scrolly.min.js"></script>
+    <script src="~/assets/js/jquery.dropotron.min.js"></script>
+    <script src="~/assets/js/jquery.scrollex.min.js"></script>
+    <script src="~/assets/js/browser.min.js"></script>
+    <script src="~/assets/js/breakpoints.min.js"></script>
+    <script src="~/assets/js/util.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+</html>

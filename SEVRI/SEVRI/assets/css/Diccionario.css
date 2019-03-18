@@ -1,0 +1,14 @@
+﻿html, body {
+    background: #272833;
+}
+
+header.major:after {
+    background: #e44c65;
+}
+
+.tab {
+    text-align: left;
+    width: 111%;
+    margin-left: -5.4%;
+    background: rgb(49, 51, 63);
+}

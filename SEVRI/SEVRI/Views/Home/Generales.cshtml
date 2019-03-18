@@ -1,0 +1,142 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Identificación Generales</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+    <link rel="stylesheet" href="~/assets/css/diccionario.css" />
+    <link rel="stylesheet" href="~/assets/css/generales.css" />
+    <noscript><link rel="stylesheet" href="~/assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload landing">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="Home/Index">Inicio</a></li>
+                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li>
+                        <a href="#">Identificación</a>
+                        <ul>
+                            <li><a href="#">Riesgos Generales</a></li>
+                            <li><a href="Home/Especificos">Riesgos Especificos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Home/Analisis">Análisis y Evaluación</a></li>
+                    <li><a href="/Home/Administracion">Administración</a></li>
+                    <li><a href="/Home/InicioSesion" class="button primary">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="four" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>Identificación de Riesgos Generales</h2>
+                </header>
+                <form action="" method="post">
+                   
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="buscar" id="buscar" value="" placeholder="Ingrese el código" />
+                        </div>                     
+                            <input type="submit" value="Buscar" class="primary" />
+                </form>
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Categoria</th>
+                                <th>Sub Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item</td>
+                                <td>Ante</td>
+                                <td>Baja</td>
+                                <td>Alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <form action="" method="post">
+                    <div class="col-12">
+                        <select name="category" id="category">
+                            <option value="">- Causa -</option>
+                            <option value="1">Manufacturing</option>
+                            <option value="1">Shipping</option>
+                            <option value="1">Administration</option>
+                            <option value="1">Human Resources</option>
+                        </select>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-12">
+                        <textarea name="nombre" id="nombre" placeholder="Nombre" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="col-12">
+                        <textarea name="consecuencia" id="consecuencia" placeholder="Consecuencia" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="col-12">
+                        <textarea name="evento" id="evento" placeholder="Evento" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall">
+                            <label for="fecha">Fecha de identificación:</label>
+                            <input type="date" name="fecha" id="fecha" /><br />
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Registrar" class="primary" /></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.scrolly.min.js"></script>
+    <script src="~/assets/js/jquery.dropotron.min.js"></script>
+    <script src="~/assets/js/jquery.scrollex.min.js"></script>
+    <script src="~/assets/js/browser.min.js"></script>
+    <script src="~/assets/js/breakpoints.min.js"></script>
+    <script src="~/assets/js/util.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+</html>

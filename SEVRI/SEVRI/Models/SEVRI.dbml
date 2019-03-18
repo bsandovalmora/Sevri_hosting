@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="APSWSEVRI" Class="SEVRIDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=APSWSEVRI.mssql.somee.com;Initial Catalog=APSWSEVRI;User ID=apsw_grupo" SettingsObjectName="SEVRI.Properties.Settings" SettingsPropertyName="APSWSEVRIConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Administracion" Member="Administracion">
+    <Type Name="Administracion">
+      <Column Name="TipoRiesgo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodigoAdministra" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ToleranciaRiesgo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NivelRiesgoInherente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NivelRiesgo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradoAfectacion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImportanciadelObjdelProceso" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VariacionNivelRiesgoControles" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AnalisisCosto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AceptabilidadRiesgo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Riesgos_Administracion" Member="Riesgos" ThisKey="Codigo" OtherKey="Codigo" Type="Riesgos" IsForeignKey="true" />
+      <Association Name="Riesgos_Administracion1" Member="Riesgos1" ThisKey="Codigo" OtherKey="Codigo" Type="Riesgos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dependencia" Member="Dependencia">
+    <Type Name="Dependencia">
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="Dependencia_Especifico" Member="Especifico" ThisKey="Nombre" OtherKey="Dependencia" Type="Especifico" />
+      <Association Name="DireccionDirect_Dependencia" Member="DireccionDirect" ThisKey="Direccion" OtherKey="Codigo" Type="DireccionDirect" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Diccionario" Member="Diccionario">
+    <Type Name="Diccionario">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Causa" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoRiesgo" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="SubCategoria" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="Diccionario_Generales" Member="Generales" ThisKey="Codigo" OtherKey="CodigoCausa" Type="Generales" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DireccionDirect" Member="DireccionDirect">
+    <Type Name="DireccionDirect">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="DireccionDirect_Dependencia" Member="Dependencia" ThisKey="Codigo" OtherKey="Direccion" Type="Dependencia" />
+      <Association Name="DireccionDirect_Especifico" Member="Especifico" ThisKey="Codigo" OtherKey="Direccion" Type="Especifico" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Especifico" Member="Especifico">
+    <Type Name="Especifico">
+      <Column Name="Objetivo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRiesgo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CausaEspecifico" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Dependencia" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionCausa" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionEvento" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionConsecuencia" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIdentificacion" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Dependencia_Especifico" Member="Dependencia1" ThisKey="Dependencia" OtherKey="Nombre" Type="Dependencia" IsForeignKey="true" />
+      <Association Name="DireccionDirect_Especifico" Member="DireccionDirect" ThisKey="Direccion" OtherKey="Codigo" Type="DireccionDirect" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EvaluacionControlesActualesRiesgo" Member="EvaluacionControlesActualesRiesgo">
+    <Type Name="EvaluacionControlesActualesRiesgo">
+      <Column Name="CodigoEvaluacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DescripcionControlActual" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DisminucionProbabilidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisminucionImpacto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProbabilidadControlActual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImpactoControlActual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NivelRiesgoResidual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="EvalucionRiesgo_EvaluacionControlesActualesRiesgo" Member="EvalucionRiesgo" ThisKey="Codigo" OtherKey="Codigo" Type="EvalucionRiesgo" IsForeignKey="true" />
+      <Association Name="Riesgos_EvaluacionControlesActualesRiesgo" Member="Riesgos" ThisKey="Codigo" OtherKey="Codigo" Type="Riesgos" IsForeignKey="true" />
+      <Association Name="Riesgos_EvaluacionControlesActualesRiesgo1" Member="Riesgos1" ThisKey="Codigo" OtherKey="Codigo" Type="Riesgos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EvalucionRiesgo" Member="EvalucionRiesgo">
+    <Type Name="EvalucionRiesgo">
+      <Column Name="TipoRiesgo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoRiesgo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Evento" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Probabilidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Impacto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NivelRiesgoInherente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="EvalucionRiesgo_EvaluacionControlesActualesRiesgo" Member="EvaluacionControlesActualesRiesgo" ThisKey="Codigo" OtherKey="Codigo" Type="EvaluacionControlesActualesRiesgo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Generales" Member="Generales">
+    <Type Name="Generales">
+      <Column Name="Objetivo" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoRiesgo" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodigoCausa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Causa" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Definicion" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SubCategoria" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionCausa" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionEvento" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DescripcionConsecuencia" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaIdenti" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Diccionario_Generales" Member="Diccionario" ThisKey="CodigoCausa" OtherKey="Codigo" Type="Diccionario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MedidadControlRiesgoPropuesto" Member="MedidadControlRiesgoPropuesto">
+    <Type Name="MedidadControlRiesgoPropuesto">
+      <Column Name="CodgioControlPropuesto" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FechaAplicacion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionControlPropuesto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DisminucionProbabilidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisminucionImpacto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RiesgoPropuesto" Member="RiesgoPropuesto">
+    <Type Name="RiesgoPropuesto">
+      <Column Name="Codigo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Riesgos" Member="Riesgos">
+    <Type Name="Riesgos">
+      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EventoPresentado" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="Riesgos_Administracion" Member="Administracion" ThisKey="Codigo" OtherKey="Codigo" Type="Administracion" />
+      <Association Name="Riesgos_Administracion1" Member="Administracion1" ThisKey="Codigo" OtherKey="Codigo" Type="Administracion" />
+      <Association Name="Riesgos_EvaluacionControlesActualesRiesgo" Member="EvaluacionControlesActualesRiesgo" ThisKey="Codigo" OtherKey="Codigo" Type="EvaluacionControlesActualesRiesgo" />
+      <Association Name="Riesgos_EvaluacionControlesActualesRiesgo1" Member="EvaluacionControlesActualesRiesgo1" ThisKey="Codigo" OtherKey="Codigo" Type="EvaluacionControlesActualesRiesgo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="Usuario" Member="Usuario1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Contra" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.inser" Method="inser">
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Contra" Parameter="contra" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrAdmi" Method="PrAdmi">
+    <Parameter Name="TipoRiesgo" Parameter="tipoRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Prioridad" Parameter="prioridad" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoInherente" Parameter="nivelRiesgoInherente" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoResidual" Parameter="nivelRiesgoResidual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="GradoAfectacion" Parameter="gradoAfectacion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Importancia" Parameter="importancia" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Variacion" Parameter="variacion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Costo" Parameter="costo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Aceptabilidad" Parameter="aceptabilidad" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="Resultado" Parameter="resultado" Type="System.String" DbType="VarChar(50)" />
+  </Function>
+  <Function Name="dbo.PrEvalu" Method="PrEvalu">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ControlActual" Parameter="controlActual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="Probabilidad" Parameter="probabilidad" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Impacto" Parameter="impacto" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoInherente" Parameter="nivelRiesgoInherente" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NivelRiesgoResidual" Parameter="nivelRiesgoResidual" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaApli" Parameter="fechaApli" Type="System.DateTime" DbType="Date" />
+  </Function>
+  <Function Name="dbo.ProDiccionario" Method="ProDiccionario">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Categoria" Parameter="categoria" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Subcategoria" Parameter="subcategoria" Type="System.String" DbType="VarChar(50)" />
+  </Function>
+  <Function Name="dbo.ProEspecif" Method="ProEspecif">
+    <Parameter Name="CodigoEspe" Parameter="codigoEspe" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AreaRiesgo" Parameter="areaRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DependenciaRiesgo" Parameter="dependenciaRiesgo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Causa" Parameter="causa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaIdenti" Parameter="fechaIdenti" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Consecuencia" Parameter="consecuencia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+  </Function>
+  <Function Name="dbo.ProGenerales" Method="ProGenerales">
+    <Parameter Name="CodigoGeneral" Parameter="codigoGeneral" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Causa" Parameter="causa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Consecuencia" Parameter="consecuencia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FechaIdenti" Parameter="fechaIdenti" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.String" DbType="VarChar(50)" />
+  </Function>
+</Database>

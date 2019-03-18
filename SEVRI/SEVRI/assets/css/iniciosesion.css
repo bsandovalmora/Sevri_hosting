@@ -1,0 +1,7 @@
+﻿html, body {
+    background: #1c1d26;
+}
+
+    body.landing #header {
+        background: #31333f;
+    }

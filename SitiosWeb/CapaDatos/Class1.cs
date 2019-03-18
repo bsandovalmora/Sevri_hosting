@@ -20,6 +20,7 @@ namespace CapaDatos
 					 this.dt.Rows.Add(dato.id, dato.nombre, dato.sexo);
 				 }*/
 				return this.dt;
+            
 			}
     }
 }

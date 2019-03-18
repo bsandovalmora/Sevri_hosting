@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.75, 13.875" name="SEVRI">
+  <DataContextMoniker Name="/SEVRIDataContext" />
+  <nestedChildShapes>
+    <classShape Id="abdf065a-b9b0-4c83-a743-d285a17dea4b" absoluteBounds="11.375, 0.875, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/SEVRIDataContext/Administracion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16a2c417-9481-4d10-b00f-642091453bb8" absoluteBounds="11.39, 1.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04384720-1417-4a1f-abc7-276ad6c5f224" absoluteBounds="4.5, 0.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SEVRIDataContext/Dependencia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff5d6e76-1de7-4be8-86ba-1cde5145a822" absoluteBounds="4.515, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34bc1ca5-7dd0-4a2a-8ed5-a1b13b42ee59" absoluteBounds="4.75, 3, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SEVRIDataContext/Diccionario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7d4930d-45fd-49fa-aa11-befdffc58860" absoluteBounds="4.765, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f39f73c-5b18-4fc4-9b21-4c2fcc848afd" absoluteBounds="1.125, 4.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SEVRIDataContext/DireccionDirect" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4a85d41-5632-4ae5-b88c-054d7efd6751" absoluteBounds="1.1400000000000001, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.125 : 4.75); (2.125 : 1.47199625651042); (4.5 : 1.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/DireccionDirect/DireccionDirect_Dependencia" />
+      <nodes>
+        <classShapeMoniker Id="8f39f73c-5b18-4fc4-9b21-4c2fcc848afd" />
+        <classShapeMoniker Id="04384720-1417-4a1f-abc7-276ad6c5f224" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="393be0ed-d7da-4eb3-abb8-ba8de30174a4" absoluteBounds="8.375, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/SEVRIDataContext/Especifico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ce09bb4-b452-409d-938d-87d26a901378" absoluteBounds="8.39, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 1.59699625651042); (8.375 : 1.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Dependencia/Dependencia_Especifico" />
+      <nodes>
+        <classShapeMoniker Id="04384720-1417-4a1f-abc7-276ad6c5f224" />
+        <classShapeMoniker Id="393be0ed-d7da-4eb3-abb8-ba8de30174a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 5.48484537760417); (4.69791666666667 : 5.48484537760417 : JumpStart); (4.86458333333333 : 5.48484537760417 : JumpEnd); (9.375 : 5.48484537760417); (9.375 : 3.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/DireccionDirect/DireccionDirect_Especifico" />
+      <nodes>
+        <classShapeMoniker Id="8f39f73c-5b18-4fc4-9b21-4c2fcc848afd" />
+        <classShapeMoniker Id="393be0ed-d7da-4eb3-abb8-ba8de30174a4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ad7a7dde-b8e7-43f8-94f4-8d9ba3b7c192" absoluteBounds="7.875, 6.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/SEVRIDataContext/EvaluacionControlesActualesRiesgo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c040757-6e76-4a36-bd63-970e120ebee6" absoluteBounds="7.89, 6.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8572dab6-3111-43ce-adec-cd1d8f9cda7e" absoluteBounds="4.875, 6.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SEVRIDataContext/EvalucionRiesgo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6189c6ef-bceb-4864-8269-277e5c1eef0f" absoluteBounds="4.89, 6.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.875 : 7.20274983723958); (7.875 : 7.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/EvalucionRiesgo/EvalucionRiesgo_EvaluacionControlesActualesRiesgo" />
+      <nodes>
+        <classShapeMoniker Id="8572dab6-3111-43ce-adec-cd1d8f9cda7e" />
+        <classShapeMoniker Id="ad7a7dde-b8e7-43f8-94f4-8d9ba3b7c192" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="936c9630-97f2-4156-8b50-6d554ac7d4b5" absoluteBounds="6.5, 9.75, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/SEVRIDataContext/Generales" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3a34d22-3202-4381-8393-76741474af6e" absoluteBounds="6.515, 10.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.78125 : 4.9631982421875); (4.78125 : 11.2123527018229); (6.5 : 11.2123527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Diccionario/Diccionario_Generales" />
+      <nodes>
+        <classShapeMoniker Id="34bc1ca5-7dd0-4a2a-8ed5-a1b13b42ee59" />
+        <classShapeMoniker Id="936c9630-97f2-4156-8b50-6d554ac7d4b5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b587a34a-a115-44dd-babf-250489af3c36" absoluteBounds="1.25, 7.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SEVRIDataContext/MedidadControlRiesgoPropuesto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e30d4bbb-2454-404d-bf0a-5ed28c389f6a" absoluteBounds="1.2650000000000001, 7.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dde9d9ec-132b-4480-a9d8-05614f6d76f4" absoluteBounds="11.125, 10.625, 2, 1.0016910807291668">
+      <DataClassMoniker Name="/SEVRIDataContext/RiesgoPropuesto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1afff8bd-15a0-4f3b-bf74-76ec55f5aaaf" absoluteBounds="11.14, 11.085, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b21dbcfd-6a95-4894-8546-2e2b0edaa151" absoluteBounds="13.5, 8, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SEVRIDataContext/Riesgos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ced1dd9-90d8-4153-9215-38ff2f847e1a" absoluteBounds="13.515, 8.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.65625 : 8); (14.65625 : 2.33735270182292); (13.375 : 2.33735270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Riesgos/Riesgos_Administracion" />
+      <nodes>
+        <classShapeMoniker Id="b21dbcfd-6a95-4894-8546-2e2b0edaa151" />
+        <classShapeMoniker Id="abdf065a-b9b0-4c83-a743-d285a17dea4b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.2031225 : 8); (14.2031225 : 3.09978155273437); (13.375 : 3.09978155273437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Riesgos/Riesgos_Administracion1" />
+      <nodes>
+        <classShapeMoniker Id="b21dbcfd-6a95-4894-8546-2e2b0edaa151" />
+        <classShapeMoniker Id="abdf065a-b9b0-4c83-a743-d285a17dea4b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 8.23640055338542); (9.875 : 8.23640055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Riesgos/Riesgos_EvaluacionControlesActualesRiesgo" />
+      <nodes>
+        <classShapeMoniker Id="b21dbcfd-6a95-4894-8546-2e2b0edaa151" />
+        <classShapeMoniker Id="ad7a7dde-b8e7-43f8-94f4-8d9ba3b7c192" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 8.05570027669271); (9.875 : 8.05570027669271)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SEVRIDataContext/Riesgos/Riesgos_EvaluacionControlesActualesRiesgo1" />
+      <nodes>
+        <classShapeMoniker Id="b21dbcfd-6a95-4894-8546-2e2b0edaa151" />
+        <classShapeMoniker Id="ad7a7dde-b8e7-43f8-94f4-8d9ba3b7c192" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2de43a1b-8471-4a04-b223-3e2a1c1dcb12" absoluteBounds="11, 12.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SEVRIDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a2a9b45-2ea5-4b60-9a8f-3366bab6e63d" absoluteBounds="11.015, 12.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

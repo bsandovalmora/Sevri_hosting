@@ -11,3 +11,10 @@ C:\Users\fiorella salazar\Desktop\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.csproj
 C:\Users\fiorella salazar\Desktop\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\fiorella salazar\Desktop\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\fiorella salazar\Desktop\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\Sevri_hosting\Sevri_hosting\SitiosWeb\CapaDatos\obj\Debug\CapaDatos.pdb
