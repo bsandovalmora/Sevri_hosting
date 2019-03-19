@@ -20,19 +20,19 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <h1 id="logo"><a href=""><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home/Index">Inicio</a></li>
-                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li><a href="/Home/Index">Inicio</a></li>
+                    <li><a href="/Home/Diccionario">Diccionario</a></li>
                     <li>
                         <a href="#">Identificación</a>
                         <ul>
-                            <li><a href="Home/Generales">Riesgos Generales</a></li>
-                            <li><a href="Home/Especificos">Riesgos Especificos</a></li>
+                            <li><a href="/Home/Generales">Riesgos Generales</a></li>
+                            <li><a href="/Home/Especificos">Riesgos Especificos</a></li>
                         </ul>
                     </li>
-                    <li><a href="Home/Analisis">Análisis y Evaluación</a></li>
+                    <li><a href="/Home/Analisis">Análisis y Evaluación</a></li>
                     <li><a href="#">Administración</a></li>
                     <li><a href="/Home/InicioSesion" class="button primary">Iniciar Sesion</a></li>
                 </ul>
@@ -56,8 +56,8 @@
                     <table class="alt">
                         <thead>
                             <tr>
-                                <th>Codigo</th>
-                                <th>Descripción</th>
+                                <th>Código</th>
+                                <th>Evento presentado</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -70,7 +70,7 @@
                 </div>
                 <br />
                 <header class="major">
-                    <h3>Medidas de actuales de control del riesgo</h3>
+                    <h3>Medidas de control de riesgo propuesto</h3>
                 </header>
                 <br />
                 <div class="table-wrapper">
@@ -78,7 +78,7 @@
                         <thead>
                             <tr>
                                 <th>Tipo de riesgo</th>
-                                <th>Prioridad del Riesgo</th>
+                                <th>Tolerancia del Riesgo</th>
                                 <th>Nivel del Riesgo inherente</th>
                                 <th>Nivel del Riesgo residual</th>
                                 <th>Grado de afectación</th>
@@ -86,28 +86,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><select name="tipo" id="tipo">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                        </select></td>
+                                <td>
+                                    <select name="tipo" id="tipo">
+                                        <option value="Bajo">Bajo</option>
+                                        <option value="Alto">Alto</option>
+                                    </select>
+                                </td>
                                 <td>
                                     <select name="prioridad" id="prioridad">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
+                                        <option value="Aceptable">Aceptable</option>
+                                        <option value="Inaceptable">Inaceptable</option>
                                     </select>
                                 </td>
                                 <td>Baja</td>
                                 <td>Tipo</td>
                                 <td>
                                     <select name="grado" id="grado">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
+                                        <option value="Bajo">Bajo</option>
+                                        <option value="Medio">Medio</option>
+                                        <option value="Alto">Alto</option>  
                                     </select>
                                 </td>
                             </tr>
@@ -115,9 +112,7 @@
                     </table>
                 </div>
                 <br />
-                <header class="major">
-                   
-                </header>
+                <header class="major"></header>
                 <br />
                 <form action="" method="post">
                     <div class="table-wrapper">
@@ -128,18 +123,17 @@
                                     <th>Variación del nivel del riesgo con controles</th>
                                     <th>Análisis costo/beneficio</th>
                                     <th>Aceptabilidad del riesgo</th>
-                                    <th>Resultado de la evaluación</th>
-                                    
+                                   
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <select name="importancia" id="importancia">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
+                                            <option value="Bajo">Bajo</option>
+                                            <option value="Medio">Medio</option>
+                                            <option value="Alto">Alto</option>
                                         </select>
                                     </td>
                                     <td>
@@ -150,9 +144,17 @@
                                             <option value="4">4</option>
                                         </select>
                                     </td>
-                                    <td>Costo</td>
-                                    <td>Modificar</td>
-                                    <td>Baja</td>                                 
+                                    <td><input type="number" name="costo" id="costo" required/></td>
+                                    <td>
+                                        <select name="acep" id="acep">
+                                            <option value="Aceptar">Aceptar</option>
+                                            <option value="Definir">Definir</option>
+                                            <option value="Evitar">Evitar</option>
+                                            <option value="Reducir">Reducir</option>
+                                            <option value="Compartir">Compartir</option>
+                                        </select>
+                                    </td>
+                                    
                                 </tr>
                             </tbody>
                         </table>

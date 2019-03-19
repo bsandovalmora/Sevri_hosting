@@ -20,16 +20,16 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <h1 id="logo"><a href=""><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home/Index">Inicio</a></li>
-                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li><a href="/Home/Index">Inicio</a></li>
+                    <li><a href="/Home/Diccionario">Diccionario</a></li>
                     <li>
                         <a href="#">Identificación</a>
                         <ul>
                             <li><a href="#">Riesgos Generales</a></li>
-                            <li><a href="Home/Especificos">Riesgos Especificos</a></li>
+                            <li><a href="/Home/Especificos">Riesgos Especificos</a></li>
                         </ul>
                     </li>
                     <li><a href="/Home/Analisis">Análisis y Evaluación</a></li>
@@ -56,7 +56,8 @@
                     <table class="alt">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Código</th>
+                                <th>Causa</th>
                                 <th>Descripción</th>
                                 <th>Categoria</th>
                                 <th>Sub Categoria</th>
@@ -64,6 +65,7 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>COD-001</td>
                                 <td>Item</td>
                                 <td>Ante</td>
                                 <td>Baja</td>
@@ -74,27 +76,17 @@
                 </div>
                 <br />
                 <form action="" method="post">
-                    <div class="col-12">
-                        <select name="category" id="category">
-                            <option value="">- Causa -</option>
-                            <option value="1">Manufacturing</option>
-                            <option value="1">Shipping</option>
-                            <option value="1">Administration</option>
-                            <option value="1">Human Resources</option>
-                        </select>
-                    </div>
-                    <br />
                     <br />
                     <div class="col-12">
-                        <textarea name="nombre" id="nombre" placeholder="Nombre" rows="6"></textarea>
+                        <textarea name="des_causa" id="desp_causa" placeholder="Descripción de la causa" rows="6"></textarea>
                     </div>
                     <br />
                     <div class="col-12">
-                        <textarea name="consecuencia" id="consecuencia" placeholder="Consecuencia" rows="6"></textarea>
+                        <textarea name="des_evento" id="des_evento" placeholder="Descripción del evento" rows="6"></textarea>
                     </div>
                     <br />
                     <div class="col-12">
-                        <textarea name="evento" id="evento" placeholder="Evento" rows="6"></textarea>
+                        <textarea name="des_conse" id="des_conse" placeholder="Descripción de la consecuencia" rows="6"></textarea>
                     </div>
                     <br />
                     <div class="row gtr-uniform gtr-50">

@@ -20,15 +20,15 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <h1 id="logo"><a href=""><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home/Index">Inicio</a></li>
-                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li><a href="/Home/Index">Inicio</a></li>
+                    <li><a href="/Home/Diccionario">Diccionario</a></li>
                     <li>
                         <a href="#">Identificación</a>
                         <ul>
-                            <li><a href="Home/Generales">Riesgos Generales</a></li>
+                            <li><a href="/Home/Generales">Riesgos Generales</a></li>
                             <li><a href="#">Riesgos Especificos</a></li>
                         </ul>
                     </li>
@@ -49,11 +49,13 @@
                     <div class="col-6 col-12-xsmall">
                         <input type="text" name="buscar" id="buscar" value="" placeholder="Ingrese el código" />
                     </div>
-                    <input type="submit" value="Buscar" class="primary" />
-
                 </form>              
-                <br />
+        
                 <form action="" method="post">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="nom_causa" id="nom_causa" value="" placeholder="Nombre de la causa" />
+                    </div>
+                    <br />
                     <div class="row gtr-uniform gtr-50">
                         <div class="col-6 col-12-xsmall">
                             <select name="area" id="category">
@@ -73,35 +75,35 @@
                                 <option value="1">Human Resources</option>
                             </select>
                         </div>
-                    </div>                        
-                        <br />
-                        <br />
-                        <div class="col-12">
-                            <textarea name="causa" id="causa" placeholder="Causa" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-12">
+                        <textarea name="causa" id="causa" placeholder="Descripción de la causa" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="col-12">
+                        <textarea name="evento" id="evento" placeholder="Descripción del evento" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="col-12">
+                        <textarea name="consecuencia" id="consecuencia" placeholder="Descripción de la consecuencia" rows="6"></textarea>
+                    </div>
+                    <br />
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall">
+                            <label for="fecha">Fecha de identificación:</label>
+                            <input type="date" name="fecha" id="fecha" /><br />
                         </div>
-                        <br />
-                        <div class="col-12">
-                            <textarea name="evento" id="evento" placeholder="Evento" rows="6"></textarea>
-                        </div>
-                        <br />
-                        <div class="col-12">
-                            <textarea name="consecuencia" id="consecuencia" placeholder="Consecuencia" rows="6"></textarea>
-                        </div>
-                        <br />
-                        <div class="row gtr-uniform gtr-50">
-                            <div class="col-6 col-12-xsmall">
-                                <label for="fecha">Fecha de identificación:</label>
-                                <input type="date" name="fecha" id="fecha" /><br />
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" value="Registrar" class="primary" /></li>
-                            </ul>
-                        </div>
-</form>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Registrar" class="primary" /></li>
+                        </ul>
+                    </div>
+                </form>
             </div>
         </section>
 

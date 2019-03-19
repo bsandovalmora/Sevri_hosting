@@ -20,16 +20,16 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
+            <h1 id="logo"><a href=""><img src="~/img/logo_cuc_color.png" alt="HTML tutorial" style="width:45px;height:45px;border:0;"></a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="Home/Index">Inicio</a></li>
-                    <li><a href="Home/Diccionario">Diccionario</a></li>
+                    <li><a href="/Home/Index">Inicio</a></li>
+                    <li><a href="/Home/Diccionario">Diccionario</a></li>
                     <li>
-                        <a href="#">Identificación</a>
+                        <a href="">Identificación</a>
                         <ul>
-                            <li><a href="Home/Generales">Riesgos Generales</a></li>
-                            <li><a href="Home/Especificos">Riesgos Especificos</a></li>
+                            <li><a href="/Home/Generales">Riesgos Generales</a></li>
+                            <li><a href="/Home/Especificos">Riesgos Especificos</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Análisis y Evaluación</a></li>
@@ -72,7 +72,7 @@
                 </div>
                 <br />
                 <header class="major">
-                    <h3>Evaluación de los controles actuales del Riesgo</h3>
+                    <h3>Evaluación de Riesgo</h3>
                 </header>
                 <br />
                 <div class="table-wrapper">
@@ -90,8 +90,25 @@
                             <tr>
                                 <td>Item</td>
                                 <td>Tipo</td>
-                                <td>Baja</td>
-                                <td>Tipo</td>
+                                <td>
+                                    <select name="probabilidad" id="probabilidad">
+                                        <option value="0%">0%</option>
+                                        <option value="20%">20%</option>
+                                        <option value="40%">40%</option>
+                                        <option value="60%">60%</option>
+                                        <option value="80%">80%</option>
+                                        <option value="100%">100%</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="probabilidad" id="probabilidad">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
                                 <td>Baja</td>
                             </tr>
                         </tbody>
@@ -109,10 +126,12 @@
                                 <tr>
                                     <th>Codigo C.P</th>
                                     <th>Descripción C.P</th>
+                                    <th>Disminución Probabilidad</th>
+                                    <th>Disminución Impacto</th>
                                     <th>Probabilidad</th>
                                     <th>Impacto</th>
                                     <th>Nivel de riesgo residual</th>
-                                    <th>Fecha de Aplicación</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -120,30 +139,115 @@
                                     <td>Item</td>
                                     <td>Tipo</td>
                                     <td>
-                                        <select name="probabilidad" id="probabilidad">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
+                                        <select name="dis_pro" id="dis_pro">
+                                            <option value="0%">0%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="80%">80%</option>
+                                            <option value="100%">100%</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="impacto" id="impacto">                                           
+                                        <select name="probabilidad" id="probabilidad">
+                                            <option value="0%">0%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="80%">80%</option>
+                                            <option value="100%">100%</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="dis_imp" id="dis_imp">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="impacto" id="impacto">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
                                         </select>
                                     </td>
                                     <td>Baja</td>
-                                    <td>
-                                        <input type="date" name="fecha" id="fecha" /><br />
-                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>       
+                    </div>
                     <br />
+                    <header class="major">
+                        <h3>Control de Riesgos Propuestos</h3>
+                    </header>
+                    <div class="table-wrapper">
+                        <table class="alt">
+                            <thead>
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Fecha de Identificación</th>
+                                    <th>Descripción</th>
+                                    <th>Disminución Probabilidad</th>
+                                    <th>Disminución Impacto</th>
+                                    <th>Probabilidad</th>
+                                    <th>Impacto</th>
+                                    <th>Nivel de riesgo residual</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>COD-011</td>
+                                    <td><input type="date" name="fecha_indi" id="fecha_indi" /></td>
+                                    <td><input type="text" name="descr_pro" id="descr_pro" required /></td>
+                                    <td>
+                                        <select name="dis_pro" id="dis_pro">
+                                            <option value="0%">0%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="80%">80%</option>
+                                            <option value="100%">100%</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="dis_imp" id="dis_imp">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="pro" id="pro">
+                                            <option value="0%">0%</option>
+                                            <option value="20%">20%</option>
+                                            <option value="40%">40%</option>
+                                            <option value="60%">60%</option>
+                                            <option value="80%">80%</option>
+                                            <option value="100%">100%</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="impacto" id="impacto">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+                                    <td>Baja</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <br />
                     <div class="col-12">
                         <ul class="actions">
